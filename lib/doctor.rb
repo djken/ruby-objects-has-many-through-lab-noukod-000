@@ -4,7 +4,7 @@ class Doctor
   def self.all
     @@all
   end
-  
+
   attr_accessor :name, :appointments
 
   def initialize(name)
