@@ -16,7 +16,7 @@ class Doctor
   def new_meal(waiter, total, tip=0)
       Meal.new(waiter, self, total, tip)
   end
-    
+
   def new_appointment(date, patient, appointment)
      appointment = Appointment.new(patient, self, date)
      @appointments << appointment
