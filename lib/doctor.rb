@@ -16,10 +16,6 @@ class Doctor
      appointment
   end
 
-  def new_song(title, genre)
-    Song.new(title, self, genre)
-  end
-
   def self.all
     @@all
   end
