@@ -8,8 +8,8 @@ class Doctor
   attr_accessor :name, :appointments
 
   def initialize(name)
-    @name=name
-    @appointments=[]
+    @name = name
+    @appointments = []
     @@all << self
   end
 
