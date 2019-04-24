@@ -23,12 +23,6 @@ class Doctor
      appointment
   end
 
-  def appointments
-    @@appointments.select do |appointment|
-    appointment.doctor == self
-  end
-end
-
   def patients
     @appointments.collect do |appointment|
       appointment.patient
