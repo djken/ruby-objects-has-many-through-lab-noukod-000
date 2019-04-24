@@ -11,14 +11,14 @@ class Doctor
   end
 
   def new_appointment(date, patient)
-     Appointment.new(patient, self, date)
-    #  @appointments << appointment
-    #  appointment
+     appointment = Appointment.new(patient,self,date)
+     @appointments << appointment
+     appointment
   end
 
-  # def new_song(title, genre)
-  #   Song.new(title, self, genre)
-  # end
+  def new_song(title, genre)
+    Song.new(title, self, genre)
+  end
 
   def self.all
     @@all
